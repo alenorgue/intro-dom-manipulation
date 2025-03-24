@@ -26,10 +26,25 @@
             cursor: pointer;
             width: 100%;
             font-size: 18px;
+            font-weight: bold;
         }
 
         .card button:hover {
             opacity: 0.7;
+        }
+
+        .fancy-text {
+            text-transform: uppercase;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            /* Fuente divertida */
+            font-size: 20px;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);   
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            /* Sombra para dar profundidad */
+            transform: rotate(-2deg);
+            /* Ligeramente inclinado */
+            letter-spacing: 2px;
+            /* Espaciado entre letras */
         }
     </style>
 </head>
@@ -42,14 +57,15 @@
         <img src="https://www.w3schools.com/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
         <h1 id="product-name">Tailored Jeans</h1>
         <p class="price">$19.99</p>
-        <p id="description">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun
-            denim lorem jeansum.
+        <p id="description">Some high-quality jeans crafted from the finest materials.
         </p>
         <p><button>Add to Cart</button></p>
     </div>
 
     <script>
-        // Cada ejercicio se resuelve con una línea de código o dos. NO MODIFIQUES EL HTML
+        // Cada ejercicio se resuelve con una línea de código o dos. Puedes modificar el HTML para añadir identificadores, pero intenta resolver los ejercicios sin hacerlo
+
+        /* Mostrar información de los nodos DOM */
 
         // 0. Muestra por consola el texto del nodo h2.
 
@@ -60,13 +76,27 @@
         // 2. Muestra por consola la descripción de este artículo
 
         // 3. Muestra el precio del producto por consola
-        
+
+        // 3. Muestra el precio del producto por consola sin el símbolo del dólar
 
         // 4. COMPLICADO. Muestra por consola el valor del estilo en línea 'width' del tag <img>
 
-        // 5. DIFÍCIL: Aplica un 21% (de incremento) al precio de este producto y muéstralo por consola . Tenéis que coger el valor del nodo $19.99, convertirlo a un número, multiplicarlo por 0.21. Mostrar la suma total por consola
+        /* Modificar estilos CSS */
 
+        // 6. Cambiar el color del título h2 a verde (green)
+
+        // 7. Aumentar el tamaño de fuente del nombre del producto (h1) a 28px
+
+        // 8. Cambia el color de la letra del botón "Add To Cart" al color #002147
+
+        // 9. Cambiar el fondo del botón a color mango
+
+        // 10. Utiliza el método addClass para añdir la clase CSS "fancy-text" a la descripción del producto
+
+        // 5. DIFÍCIL: Aplica un 21% (de incremento) al precio de este producto y muéstralo por consola
+    
     </script>
+
 
 </body>
 
