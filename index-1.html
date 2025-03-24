@@ -68,33 +68,37 @@
         /* Mostrar información de los nodos DOM */
 
         // 0. Muestra por consola el texto del nodo h2.
-
+        console.log(document.querySelector("h2").textContent);
         // 0b. Muestra por consola el texto del nodo h1
-
+        console.log(document.querySelector("h1").textContent);
         // 1. Muestra por la consola el valor de la propiedad 'src' de la imagen
-
+        console.log(document.querySelector("img").src);
         // 2. Muestra por consola la descripción de este artículo
-
+        console.log(document.querySelector("#description").textContent);
         // 3. Muestra el precio del producto por consola
-
+        console.log(document.querySelector(".price").textContent);
         // 3. Muestra el precio del producto por consola sin el símbolo del dólar
-
+        console.log(document.querySelector(".price").textContent.replace("$", ""));
         // 4. COMPLICADO. Muestra por consola el valor del estilo en línea 'width' del tag <img>
+        console.log(document.querySelector("img").style.width);
 
         /* Modificar estilos CSS */
 
         // 6. Cambiar el color del título h2 a verde (green)
-
+        document.querySelector("h2").style.color = "green";
         // 7. Aumentar el tamaño de fuente del nombre del producto (h1) a 28px
-
+        document.querySelector("h1").style.fontSize = "28px";
         // 8. Cambia el color de la letra del botón "Add To Cart" al color #002147
-
+        document.querySelector("button").style.color = "#002147";
         // 9. Cambiar el fondo del botón a color mango
-
+        document.querySelector("button").style.backgroundColor = "#FFC324";
         // 10. Utiliza el método addClass para añdir la clase CSS "fancy-text" a la descripción del producto
-
+        document.querySelector("#description").classList.add("fancy-text");
         // 5. DIFÍCIL: Aplica un 21% (de incremento) al precio de este producto y muéstralo por consola
-    
+        let originalPrice = 19.99;
+        let newPrice = originalPrice + (originalPrice * 0.21);
+        console.log("Nuevo precio con incremento del 21%: $" + newPrice); 
+
     </script>
 
 
